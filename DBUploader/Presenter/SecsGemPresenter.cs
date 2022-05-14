@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using DBUploader.Service;
 using DBUploader.View;
 using DBUploader.Domain;
+using System.Threading;
 
 namespace DBUploader.Presenter
 {
@@ -20,27 +21,46 @@ namespace DBUploader.Presenter
             this.view = view;
             this.dbService = new DBUploadService();
             this.secsGemService = new SecsGemService();
+            this.secsGemService.SecsGemStart();
             this.secsGemService.RecipeParamUploadHandler += Service_RecipeParamUploadHandler;
         }
 
         private void Service_RecipeParamUploadHandler(object sender, RecipeParam e)
         {
-            view.RecipeParam = new string[]
-            {
-                e.ClusterRecipe,
-                e.FrontsideRecipe,
-                e.InspectionDies,
-                e.InspectionColumns,
-                e.InspectionRows
-            };
+            
 
             if (this.dbService.DBUpload(e))
             {
-                view.Result = "DB Upload Succ";
+                view.RecipeParam = new string[]
+                {
+                    e.ClusterRecipe,
+                    e.FrontsideRecipe,
+                    e.InspectionDies,
+                    e.InspectionColumns,
+                    e.InspectionRows,
+                    "PASS"
+                };
             }
             else
             {
-                view.Result = "DB Upload Fail";
+                view.RecipeParam = new string[]
+                {
+                    e.ClusterRecipe,
+                    e.FrontsideRecipe,
+                    e.InspectionDies,
+                    e.InspectionColumns,
+                    e.InspectionRows,
+                    "NG"
+                };
+            }
+        }
+
+        public void SecsGemParamRequest(string[] uploadParams)
+        {
+            foreach(string ppid in uploadParams)
+            {
+                secsGemService.RecipeParamRequest(ppid);
+                Thread.Sleep(10000);
             }
         }
     }

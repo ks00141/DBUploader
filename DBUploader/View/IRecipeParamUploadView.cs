@@ -8,7 +8,8 @@ namespace DBUploader.View
 {
     interface IRecipeParamUploadView
     {
-        string[] RecipeParam { get; set; }
-        string Result { get; set; }
+        string[] RecipeParam { set; }
+
+        string[] UploadParams { get;}
     }
 }

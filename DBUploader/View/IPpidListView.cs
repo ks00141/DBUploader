@@ -8,6 +8,6 @@ namespace DBUploader.View
 {
     interface IPpidListView
     {
-        string[] Ppid { get; set; }
+        string[] Ppid { set; }
     }
 }
