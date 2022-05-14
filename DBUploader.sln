@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32413.511
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBUploader", "DBUploader\DBUploader.csproj", "{F79C06F1-044E-4ABC-818E-3330814CDFCD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F79C06F1-044E-4ABC-818E-3330814CDFCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F79C06F1-044E-4ABC-818E-3330814CDFCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F79C06F1-044E-4ABC-818E-3330814CDFCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F79C06F1-044E-4ABC-818E-3330814CDFCD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {47201772-C020-439B-AC60-86F4043E8027}
+	EndGlobalSection
+EndGlobal
