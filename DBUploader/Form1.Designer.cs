@@ -295,7 +295,7 @@ namespace DBUploader
             // columnHeader6
             // 
             this.columnHeader6.Text = "Frontside Recipe";
-            this.columnHeader6.Width = 378;
+            this.columnHeader6.Width = 346;
             // 
             // columnHeader7
             // 
