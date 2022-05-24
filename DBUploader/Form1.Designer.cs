@@ -53,11 +53,22 @@ namespace DBUploader
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.treeView1 = new System.Windows.Forms.TreeView();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.tableLayoutPanel6.SuspendLayout();
+            this.tableLayoutPanel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -67,14 +78,14 @@ namespace DBUploader
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.lv_uploadHistory, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.431535F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 93.56847F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 125F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1110, 700);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(957, 528);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -87,12 +98,12 @@ namespace DBUploader
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel4, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel5, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 38);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 29);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1104, 534);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(951, 396);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // tableLayoutPanel3
@@ -103,23 +114,23 @@ namespace DBUploader
             this.tableLayoutPanel3.Controls.Add(this.lv_updateList, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(570, 2);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(492, 2);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 3;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(531, 530);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 26F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(456, 392);
             this.tableLayoutPanel3.TabIndex = 2;
             // 
             // button2
             // 
             this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Location = new System.Drawing.Point(3, 500);
+            this.button2.Location = new System.Drawing.Point(3, 368);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(525, 28);
+            this.button2.Size = new System.Drawing.Size(450, 22);
             this.button2.TabIndex = 0;
             this.button2.Text = "DB Upload";
             this.button2.UseVisualStyleBackColor = true;
@@ -132,10 +143,10 @@ namespace DBUploader
             this.columnHeader4});
             this.lv_updateList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lv_updateList.HideSelection = false;
-            this.lv_updateList.Location = new System.Drawing.Point(3, 27);
+            this.lv_updateList.Location = new System.Drawing.Point(3, 22);
             this.lv_updateList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lv_updateList.Name = "lv_updateList";
-            this.lv_updateList.Size = new System.Drawing.Size(525, 469);
+            this.lv_updateList.Size = new System.Drawing.Size(450, 342);
             this.lv_updateList.TabIndex = 1;
             this.lv_updateList.UseCompatibleStateImageBehavior = false;
             this.lv_updateList.View = System.Windows.Forms.View.Details;
@@ -156,7 +167,7 @@ namespace DBUploader
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Location = new System.Drawing.Point(3, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(525, 25);
+            this.label2.Size = new System.Drawing.Size(450, 20);
             this.label2.TabIndex = 2;
             this.label2.Text = "Upload List";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -172,9 +183,9 @@ namespace DBUploader
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(529, 530);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(455, 392);
             this.tableLayoutPanel4.TabIndex = 3;
             // 
             // lv_ppidList
@@ -184,10 +195,10 @@ namespace DBUploader
             this.columnHeader2});
             this.lv_ppidList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lv_ppidList.HideSelection = false;
-            this.lv_ppidList.Location = new System.Drawing.Point(3, 27);
+            this.lv_ppidList.Location = new System.Drawing.Point(3, 22);
             this.lv_ppidList.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lv_ppidList.Name = "lv_ppidList";
-            this.lv_ppidList.Size = new System.Drawing.Size(523, 501);
+            this.lv_ppidList.Size = new System.Drawing.Size(449, 368);
             this.lv_ppidList.TabIndex = 1;
             this.lv_ppidList.UseCompatibleStateImageBehavior = false;
             this.lv_ppidList.View = System.Windows.Forms.View.Details;
@@ -208,7 +219,7 @@ namespace DBUploader
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(523, 25);
+            this.label1.Size = new System.Drawing.Size(449, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "PPID List";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -221,24 +232,24 @@ namespace DBUploader
             this.tableLayoutPanel5.Controls.Add(this.button3, 0, 2);
             this.tableLayoutPanel5.Controls.Add(this.button4, 0, 3);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(538, 2);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(464, 2);
             this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 4;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(26, 530);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(22, 392);
             this.tableLayoutPanel5.TabIndex = 4;
             // 
             // button1
             // 
             this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Location = new System.Drawing.Point(0, 25);
+            this.button1.Location = new System.Drawing.Point(0, 20);
             this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(26, 168);
+            this.button1.Size = new System.Drawing.Size(22, 124);
             this.button1.TabIndex = 0;
             this.button1.Text = ">";
             this.button1.UseVisualStyleBackColor = true;
@@ -247,10 +258,10 @@ namespace DBUploader
             // button3
             // 
             this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.Location = new System.Drawing.Point(0, 193);
+            this.button3.Location = new System.Drawing.Point(0, 144);
             this.button3.Margin = new System.Windows.Forms.Padding(0);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(26, 168);
+            this.button3.Size = new System.Drawing.Size(22, 124);
             this.button3.TabIndex = 1;
             this.button3.Text = "<";
             this.button3.UseVisualStyleBackColor = true;
@@ -259,10 +270,10 @@ namespace DBUploader
             // button4
             // 
             this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button4.Location = new System.Drawing.Point(0, 361);
+            this.button4.Location = new System.Drawing.Point(0, 268);
             this.button4.Margin = new System.Windows.Forms.Padding(0);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(26, 169);
+            this.button4.Size = new System.Drawing.Size(22, 124);
             this.button4.TabIndex = 2;
             this.button4.Text = "ALL";
             this.button4.UseVisualStyleBackColor = true;
@@ -279,10 +290,9 @@ namespace DBUploader
             this.columnHeader10});
             this.lv_uploadHistory.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lv_uploadHistory.HideSelection = false;
-            this.lv_uploadHistory.Location = new System.Drawing.Point(3, 578);
-            this.lv_uploadHistory.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.lv_uploadHistory.Location = new System.Drawing.Point(3, 430);
             this.lv_uploadHistory.Name = "lv_uploadHistory";
-            this.lv_uploadHistory.Size = new System.Drawing.Size(1104, 118);
+            this.lv_uploadHistory.Size = new System.Drawing.Size(951, 95);
             this.lv_uploadHistory.TabIndex = 1;
             this.lv_uploadHistory.UseCompatibleStateImageBehavior = false;
             this.lv_uploadHistory.View = System.Windows.Forms.View.Details;
@@ -317,12 +327,86 @@ namespace DBUploader
             this.columnHeader10.Text = "Result";
             this.columnHeader10.Width = 91;
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(971, 560);
+            this.tabControl1.TabIndex = 1;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.tableLayoutPanel1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(963, 534);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Secs/Gem Upload";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.tableLayoutPanel6);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(963, 534);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "File Upload";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tableLayoutPanel6
+            // 
+            this.tableLayoutPanel6.ColumnCount = 1;
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.Controls.Add(this.tableLayoutPanel7, 0, 3);
+            this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(3, 3);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel6.Name = "tableLayoutPanel6";
+            this.tableLayoutPanel6.RowCount = 5;
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 21F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 325F));
+            this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 78F));
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(957, 528);
+            this.tableLayoutPanel6.TabIndex = 0;
+            // 
+            // tableLayoutPanel7
+            // 
+            this.tableLayoutPanel7.ColumnCount = 2;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.Controls.Add(this.treeView1, 0, 0);
+            this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(0, 125);
+            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(0);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 1;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(957, 325);
+            this.tableLayoutPanel7.TabIndex = 0;
+            // 
+            // treeView1
+            // 
+            this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.treeView1.Location = new System.Drawing.Point(3, 3);
+            this.treeView1.Name = "treeView1";
+            this.treeView1.Size = new System.Drawing.Size(472, 319);
+            this.treeView1.TabIndex = 0;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1110, 700);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.ClientSize = new System.Drawing.Size(971, 560);
+            this.Controls.Add(this.tabControl1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "ARMS DB Uploader";
@@ -333,6 +417,11 @@ namespace DBUploader
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tableLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -363,6 +452,12 @@ namespace DBUploader
         private System.Windows.Forms.ColumnHeader columnHeader8;
         private System.Windows.Forms.ColumnHeader columnHeader9;
         private System.Windows.Forms.ColumnHeader columnHeader10;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
+        private System.Windows.Forms.TreeView treeView1;
     }
 }
 

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using DBUploader.View;
 using DBUploader.Presenter;
 using System.Threading;
+using System.IO;
 
 namespace DBUploader
 {
@@ -21,6 +22,7 @@ namespace DBUploader
         public Form1()
         {
             InitializeComponent();
+            LoadDirectory();
             this.ppidPresenter = new PpidPresenter(this);
             this.secsGemPresenter = new SecsGemPresenter(this);
             try
@@ -101,6 +103,13 @@ namespace DBUploader
             }
             Thread t = new Thread(() => secsGemPresenter.SecsGemParamRequest(param));
             t.Start();
+        }
+
+        public void LoadDirectory()
+        {
+            DirectoryInfo di = new DirectoryInfo("C:\\");
+            TreeNode tn = treeView1.Nodes.Add(di.Name);
+            tn.Tag = di.FullName;
         }
     }
 }
