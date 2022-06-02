@@ -107,9 +107,15 @@ namespace DBUploader
 
         public void LoadDirectory()
         {
-            DirectoryInfo di = new DirectoryInfo("C:\\");
-            TreeNode tn = treeView1.Nodes.Add(di.Name);
-            tn.Tag = di.FullName;
+            var directoryInfo = new DirectoryInfo("C:\\");
+            foreach(var dir in directoryInfo.GetDirectories())
+            {
+                treeView1.Nodes.Add(dir.Name);
+            }
+            foreach(var file in directoryInfo.GetFiles())
+            {
+                treeView1.Nodes.Add(file.Name);
+            }
         }
     }
 }

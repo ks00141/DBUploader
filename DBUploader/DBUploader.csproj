@@ -123,6 +123,12 @@
     <Compile Include="Service\DBUploadService.cs" />
     <Compile Include="Service\PpidService.cs" />
     <Compile Include="Service\SecsGemService.cs" />
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\IPpidListView.cs" />
     <Compile Include="View\IRecipeParamUploadView.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -137,6 +143,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
